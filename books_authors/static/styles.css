@@ -1,0 +1,15 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    padding:30px;
+    margin-top: 20px;
+}
+.row{
+display: block;
+}
+#booksNlist{
+    display:flex;
+    justify-content: center;
+}
