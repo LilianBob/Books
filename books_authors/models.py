@@ -7,8 +7,8 @@ class Book(models.Model):
     created_at= models.DateTimeField(auto_now_add=True)
     updated_at= models.DateTimeField(auto_now=True)
     
-    def __str__(self):
-        return f"<User object: {self.title} {self.desc}>"
+    # def __str__(self):
+    #     return f"<User object: {self.title} {self.desc}>"
 
 class Author(models.Model):
     first_name= models.CharField(max_length=255)
@@ -18,7 +18,11 @@ class Author(models.Model):
     created_at= models.DateTimeField(auto_now_add=True)
     updated_at= models.DateTimeField(auto_now=True)
 
-    def __str__(self):
-        return f"<User object: {self.first_name} {self.last_name}>"
+    # @property
+    # def full_name(self):
+    #     return f"{self.first_name} {self.last_name}"
+
+    # def __str__(self):
+    #     return f"<User object: {self.first_name} {self.last_name} {self.notes}>"
 
 
