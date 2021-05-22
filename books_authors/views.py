@@ -19,7 +19,7 @@ def view_book(request, book_id):
     return render(request, "book.html", context)
 
 def authors(request):
-    return render(request, 'authors.html', {"authors": Author.objects.all()})
+    return render(request, "authors.html", {"authors": Author.objects.all()})
 def add_author(request):
     Author.objects.create(first_name= request.POST['first_name'], last_name= request.POST['last_name'], notes= request.POST['notes'])
     return redirect("/authors")
